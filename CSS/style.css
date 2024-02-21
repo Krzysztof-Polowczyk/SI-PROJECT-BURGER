@@ -5,3 +5,86 @@
     --font-family_2: 'Times New Roman';
     --background-color: yellow;
 }
+html{
+    background-color: rgb(255, 216, 216);
+    display: flex;
+}
+body{
+    background-color: white;
+    border-radius: 20px;
+    height: 80%;
+    width: 70%;
+    margin: auto;
+    display: flex;
+
+}
+body > nav{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-right: solid 1px rgb(67, 72, 77, 0.1);
+    padding-right: 10px;
+    padding-left: 10px;
+}
+body > main{
+    flex-basis: 80%;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-grow: 1;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.logo > img{
+    height: 2rem;
+}
+
+.menu > li > ul{
+    display: flex;
+    gap: 10%;
+    justify-content: flex-start;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.menu > li > ul:hover{
+    background-color: rgb(232, 195, 27);
+    border-radius: 10px;
+    
+}
+.menu{
+    border-radius: 5%;
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
+    overflow: hidden;
+    flex-grow: 4;
+    
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    flex-grow: 3;
+    gap: 1rem;
+    box-shadow: 3px 0px 8px rgb(205, 203, 203);
+    margin-bottom: 0.5rem;
+    border-radius: 5%;
+    margin-bottom: 5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+}
+.user > img{
+    height: 3rem;
+}
