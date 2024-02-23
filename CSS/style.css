@@ -16,6 +16,9 @@ body{
     width: 70%;
     margin: auto;
     display: flex;
+    padding: 20px;
+    font-family: sans-serif;
+    gap: 20px;
 
 }
 body > nav{
@@ -87,4 +90,67 @@ body > main{
 }
 .user > img{
     height: 3rem;
+}
+.userInfo > button{
+    background-color: rgb(215, 215, 215);
+    margin: 5px;
+    border-radius: 5px;
+}
+.bar > #burgerInfo > button{
+    background-color: rgb(215, 215, 215);
+    margin: 5px;
+}
+.bar > span{
+    font-size: 0.9rem;
+}
+#infoBar{
+    color: rgb(161, 167, 173);
+}
+#mainInfoBar{
+    font-weight: bolder;
+}
+.bar > input{
+    background-color: rgb(215, 215, 215);
+    border: none;
+    border-radius: 10px;
+    height: 1.7rem;
+}
+.bar{
+    display: flex;
+    justify-content:space-between;
+}
+.content > header{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.content > header > img{
+    height: 4rem;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+}
+.products img{
+    height: 9rem;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product{
+    border-radius: 20px;
+    box-shadow: 3px 0px 8px rgb(205, 203, 203);
+}
+.details > h4{
+    color: rgb(210, 192, 30);
+}
+.details > h3{
+    font-weight: bolder;
+}
+.details > span{
+    font-size: 0.8rem;
+    color: rgb(215, 215, 215);;
 }
