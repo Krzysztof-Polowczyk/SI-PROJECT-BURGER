@@ -8,30 +8,35 @@
 html{
     background-color: rgb(255, 216, 216);
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 body{
     background-color: white;
     border-radius: 20px;
-    height: 80%;
     width: 70%;
-    margin: auto;
     display: flex;
-    padding: 20px;
+    padding: 1.6rem;
     font-family: sans-serif;
-    gap: 20px;
+    gap: 1.6rem;
+    margin: none;
 
 }
 body > nav{
-    flex-basis: 20%;
+    flex-basis: 25%;
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
     gap: 1.5rem;
     border-right: solid 1px rgb(67, 72, 77, 0.1);
     padding-right: 10px;
     padding-left: 10px;
+
+    
 }
 body > main{
-    flex-basis: 80%;
+    flex-basis: 75%;
+    flex-shrink: 1;
 }
 .logo{
     display: flex;
@@ -45,16 +50,19 @@ body > main{
 .logo > img{
     height: 2rem;
 }
-
+.menu {
+    display: flex;
+    flex-grow: 1;
+}
 .menu > li > ul{
     display: flex;
-    gap: 10%;
+    gap: 0.9rem;
     justify-content: flex-start;
-    margin-left: 1rem;
     margin-right: 1rem;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+
+    font-weight: bold;
 }
 .menu > li > ul:hover{
     background-color: rgb(232, 195, 27);
@@ -65,9 +73,7 @@ body > main{
     border-radius: 5%;
     margin-left: 1.1rem;
     margin-right: 1.1rem;
-    overflow: hidden;
-    flex-grow: 4;
-    
+    overflow: hidden; 
 }
 .user{
     display: flex;
@@ -76,11 +82,11 @@ body > main{
     flex-grow: 3;
     gap: 1rem;
     box-shadow: 3px 0px 8px rgb(205, 203, 203);
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
     border-radius: 5%;
-    margin-bottom: 5rem;
     margin-right: 2rem;
     margin-left: 2rem;
+    flex-shrink: 1;
 }
 .userInfo{
     display: flex;
@@ -93,12 +99,12 @@ body > main{
 }
 .userInfo > button{
     background-color: rgb(215, 215, 215);
-    margin: 5px;
+    margin: 0.4rem;
     border-radius: 5px;
 }
 .bar > #burgerInfo > button{
     background-color: rgb(215, 215, 215);
-    margin: 5px;
+    margin: 0.4rem;
 }
 .bar > span{
     font-size: 0.9rem;
@@ -114,6 +120,7 @@ body > main{
     border: none;
     border-radius: 10px;
     height: 1.7rem;
+    padding: 1rem;
 }
 .bar{
     display: flex;
@@ -123,6 +130,7 @@ body > main{
     display: flex;
     align-items: center;
     margin: 5px;
+    gap: 1rem;
 }
 .content > header > img{
     height: 4rem;
@@ -131,9 +139,16 @@ body > main{
     display: flex;
     flex-wrap: wrap;
     gap: 1.6rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 30rem;
+    margin-left: 5rem;
+}
+.products::-webkit-scrollbar{
+    display: none;
 }
 .products img{
-    height: 9rem;
+    height: 10rem;
 }
 .details{
     display: flex;
@@ -142,6 +157,7 @@ body > main{
 }
 .product{
     border-radius: 20px;
+    overflow: hidden;
     box-shadow: 3px 0px 8px rgb(205, 203, 203);
 }
 .details > h4{
@@ -154,3 +170,33 @@ body > main{
     font-size: 0.8rem;
     color: rgb(215, 215, 215);;
 }
+@media only screen and (max-width: 1400px) {
+    html {
+      font-size: 14px;
+      
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    html {
+      font-size: 12px;
+      
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    html {
+      font-size: 10px;
+      
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    html {
+      font-size: 8px;
+      
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    html {
+      font-size: 6px;
+      
+    }
+  }
